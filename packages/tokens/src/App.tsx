@@ -1,5 +1,5 @@
 
-import ButtonGroup from './components/ButtonGroup'
+import ButtonGroup from '@understory/components/ButtonGroup'
 
 function App() {
 
