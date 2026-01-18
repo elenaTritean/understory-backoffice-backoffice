@@ -1,0 +1,64 @@
+@import '../../tokens/inbox/colors.css';
+
+.storybook-button {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  border-radius: 3em;
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.storybook-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+
+.storybook-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.storybook-button--primary {
+  background-color: var(--background-primary-default);
+  color: var(--surface-tooltip);
+}
+
+.storybook-button--primary:hover {
+  background-color: var(--background-primary-hover);
+}
+
+.storybook-button--primary:active {
+  background-color: var(--background-primary-active);
+}
+
+.storybook-button--primary:focus {
+  background-color: var(--background-primary-focus);
+  outline: 2px solid var(--border-primary);
+  outline-offset: 2px;
+}
+
+.storybook-button--secondary {
+  background-color: var(--surface-raised);
+  color: var(--grey-900);
+  border: 1px solid var(--border-primary);
+}
+
+.storybook-button--secondary:hover {
+  background-color: var(--surface-base);
+}
+
+.storybook-button--secondary:active {
+  background-color: var(--grey-200);
+}
+
+.storybook-button--secondary:focus {
+  outline: 2px solid var(--border-secondary);
+  outline-offset: 2px;
+}

@@ -1,0 +1,61 @@
+@import '../../tokens/inbox/colors.css';
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-label {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--grey-900);
+}
+
+.input {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 11px 16px;
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  background-color: var(--surface-tooltip);
+  color: var(--grey-900);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input::placeholder {
+  color: var(--grey-500);
+}
+
+.input:hover {
+  border-color: var(--border-secondary);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--background-primary-default);
+  box-shadow: 0 0 0 3px var(--surface-alpha);
+}
+
+.input:disabled {
+  background-color: var(--grey-100);
+  color: var(--grey-500);
+  cursor: not-allowed;
+  border-color: var(--grey-300);
+}
+
+.input--error {
+  border-color: var(--sepia-600);
+}
+
+.input--error:focus {
+  border-color: var(--sepia-600);
+  box-shadow: 0 0 0 3px var(--sepia-100);
+}
+
+.input-error-message {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: var(--sepia-700);
+}
