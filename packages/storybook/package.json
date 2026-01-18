@@ -12,12 +12,12 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.2",
     "@storybook/addon-a11y": "^10.0.2",
+    "@storybook/addon-designs": "^11.0.1",
     "@storybook/addon-docs": "^10.0.2",
     "@storybook/addon-onboarding": "^10.0.2",
     "@storybook/addon-vitest": "^10.0.2",
     "@storybook/react-vite": "^10.0.2",
-    "storybook": "^10.0.2",
-    "storybook-addon-designs": "^6.3.1"
+    "storybook": "^10.0.2"
   },
   "dependencies": {
     "react": "^19.1.1",

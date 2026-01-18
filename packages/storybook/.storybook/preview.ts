@@ -1,11 +1,12 @@
 import type { Preview } from '@storybook/react-vite'
+import '../../tokens/inbox/colors.css';
 
 const preview: Preview = {
   parameters: {
     controls: {
       matchers: {
-       color: /(background|color)$/i,
-       date: /Date$/i,
+        color: /(background|color)$/i,
+        date: /Date$/i,
       },
     },
 
@@ -16,6 +17,15 @@ const preview: Preview = {
       test: 'todo'
     }
   },
+  decorators: [
+    (Story) => {
+      // Set default theme to light
+      if (typeof document !== 'undefined') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+      return Story();
+    }
+  ]
 };
 
 export default preview;

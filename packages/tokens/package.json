@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run build:tokens && vite build",
+    "build:tokens": "node --experimental-strip-types inbox/colors.ts",
     "check-types": "tsc --noEmit",
     "lint": "eslint .",
     "preview": "vite preview"
